@@ -1,0 +1,10 @@
+//= require js/bootstrap
+//= require js/bootstrap.min
+//= require js/jquery.fancybox.min
+//= require js/jquery.flexslider
+//= require js/jquery.min
+//= require js/owl.carousel
+//= require js/popper.min
+//= require js/script
+//= require js/jquery.themepunch.revolution.min
+//= require js/themepunch.tools.min
