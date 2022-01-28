@@ -1,7 +1,7 @@
 <!--Header Start-->
 <div class="custom-navbar wow fadeInDown" data-wow-duration="2s" role="navigation" id="header">
   <div class="header-wrap">
-    <div class="container">
+    <div class="container" id="#home">
       <div class="row">
         <div class="col-lg-4 col-md-12 navbar-light">
           <div class="atlanta_logo"><img alt="" class="logo-default" src="<%= asset_path("salon_logo.png") %>"></div>
@@ -13,15 +13,16 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <button class="close-toggler" type="button" data-toggle="offcanvas"> <span><i class="fas fa-times-circle" aria-hidden="true"></i></span> </button>
                 <ul class="navbar-nav mr-auto">
-                  <li class="nav-item"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+                  <li class="nav-item"> <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a> </li>
                   <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                  <li class="nav-item"><a class="nav-link" href="services.html">Services</a> <i class="fas fa-caret-down"></i>
-                    <ul class="submenu">
+                  <li class="nav-item"><a class="nav-link" href="#services">Services</a> 
+                  <%# <i class="fas fa-caret-down"></i> %>
+                    <%# <ul class="submenu">
                       <li><a href="services.html">Services</a></li>
                       <li><a href="services_details.html">Service Details</a></li>
-                    </ul>
+                    </ul> %>
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a> 
+                  <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a> 
                     <%# <i class="fas fa-caret-down"></i> %>
                     <%# <ul class="submenu">
                       <li><a href="gallery.html">Gallery Style 01</a></li>
@@ -29,7 +30,7 @@
                       <li><a href="gallery_03.html">Gallery Style 03</a></li>
                     </ul> %>
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a> <i class="fas fa-caret-down"></i>
+                  <%# <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a> <i class="fas fa-caret-down"></i>
                     <ul class="submenu">
                       <li><a href="blog.html">Blog</a></li>
                       <li><a href="blog_grid.html">Blog Grid</a></li>
@@ -37,8 +38,8 @@
                       <li><a href="blog_details.html">Blog Details</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
-                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li> %>
+                  <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
               </div>
             </nav>
@@ -97,9 +98,9 @@
 <!-- About End --> 
 
 <!-- Service Start -->
-<div class="service-wrap">
+<div class="service-wrap" id="services">
   <div class="container">
-    <div class="title">
+    <div class="title title_center">
       <h1>Our Services</h1>
     </div>
     <div class="service_box">
@@ -123,7 +124,7 @@
 <!-- Service End --> 
 
 <!-- Gallery Start -->
-<div class="gallery-wrap">
+<div class="gallery-wrap" id="gallery">
   <div class="container-fluid">
     <div class="title title_center">
       <h1>Our Gallery</h1>
@@ -460,13 +461,13 @@
       <div class="col-lg-2 col-md-3">
         <h3>Quick links</h3>
         <ul class="footer-links">
-          <li> <a href="index.html">Home</a></li>
-          <li> <a href="about.html">About</a></li>
-          <li> <a href="services.html">Services</a></li>
-          <li> <a href="gallery.html">Gallery</a></li>
-          <li> <a href="testimonials.html">Testimonials</a></li>
-          <li> <a href="blog.html">Blog</a></li>
-          <li> <a href="contact.html">Contact Us</a></li>
+          <li> <a href="#home">Home</a></li>
+          <li> <a href="#about">About</a></li>
+          <li> <a href="#services">Services</a></li>
+          <li> <a href="#gallery">Gallery</a></li>
+          <%# <li> <a href="testimonials.html">Testimonials</a></li>
+          <li> <a href="blog.html">Blog</a></li> %>
+          <li> <a href="#contact">Contact Us</a></li>
         </ul>
       </div>
       <div class="col-lg-3 col-md-4">
@@ -485,16 +486,16 @@
         <div class="footer_info">
           <h3>Get in Touch</h3>
           <ul class="footer-adress">
-            <li class="footer_address"> <i class="fas fa-map-signs"></i> <span>123 Lorem Ipsum, 32 sit Atlanta</span> </li>
-            <li class="footer_email"> <i class="fas fa-envelope" aria-hidden="true"></i> <span><a href="mailto:info@example.com"> info@example.com </a></span> </li>
-            <li class="footer_phone"> <i class="fas fa-phone-alt"></i> <span><a href="tel:7704282433"> 770-123-4567</a></span> </li>
+            <li class="footer_address"> <i class="fas fa-map-signs"></i> <span>Fery Beauté Spa<br> 7600 Boulevard Viau<br> Suite 356<br>Montreal, QC<br> H1S 2P3</span></li>
+            <li class="footer_email"> <i class="fas fa-envelope" aria-hidden="true"></i> <span><a href="mailto:info@example.com"> info.rossistyles@gmail.com </a></span> </li>
+            <li class="footer_phone"> <i class="fas fa-phone-alt"></i> <span><a href="tel:7704282433"> 514.947.4393</a></span> </li>
           </ul>
           <div class="social-icons footer_icon">
             <ul>
               <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+              <%# <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li> %>
               <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+              <%# <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li> %>
             </ul>
           </div>
         </div>
@@ -508,10 +509,10 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-        <div class="copyright">Copyright  © 2020 Scissors Salon. All Rights Reserved.</div>
+        <div class="copyright">Copyright  © 2022 RossiStyles. All Rights Reserved.</div>
       </div>
       <div class="col-lg-6">
-        <div class="credits">Site Credits: <a href="https://www.medialinkers.com/" target="_blank" rel="nofollow">MediaLinkers</a></div>
+        <div class="credits">Site Credits: <a href="https://www.margevity.com/" target="_blank" rel="nofollow">Margevity</a></div>
       </div>
     </div>
   </div>
