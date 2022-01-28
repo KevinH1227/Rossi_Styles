@@ -58,15 +58,15 @@
       <li data-slotamount="7" data-transition="3dcurtain-horizontal" data-masterspeed="1000" data-saveperformance="on"> <img alt="" src="<%= asset_path("dummy.png") %>" data-lazyload="<%= asset_path("slider.jpg") %>">
         <div class="caption lfb large-title tp-resizeme slidertext1" data-x="left" data-y="240" data-speed="600" data-start="1600"> Welcome To </div>
         <div class="caption lft large-title tp-resizeme slidertext2" data-x="left" data-y="270" data-speed="600" data-start="2200"><span> RossiStyles </span></div>
-        <div class="caption lfb large-title tp-resizeme slidertext3" data-x="left" data-y="400" data-speed="600" data-start="2800"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br/>
-          tempor incididunt ut labore et dolore magna aliqua.</div>
+        <div class="caption lfb large-title tp-resizeme slidertext3" data-x="left" data-y="400" data-speed="600" data-start="2800"> Love what you see because <br/>
+          being your best starts with great hair.</div>
         <div class="caption lfb large-title tp-resizeme slidertext4" data-x="left" data-y="470" data-speed="600" data-start="3400"> <a href="#">Contact Us</a> </div>
       </li>
       <li data-slotamount="7" data-transition="slotzoom-horizontal" data-masterspeed="1000" data-saveperformance="on"> <img alt="" src="<%= asset_path("dummy.png") %>" data-lazyload="<%= asset_path("slider2.jpg") %>">
         <div class="caption lfb large-title tp-resizeme slidertext1" data-x="left" data-y="240" data-speed="600" data-start="1600"> Welcome To </div>
         <div class="caption lft large-title tp-resizeme slidertext2" data-x="left" data-y="270" data-speed="600" data-start="2200"><span> Rossi Styles </span></div>
-        <div class="caption lfb large-title tp-resizeme slidertext3" data-x="left" data-y="400" data-speed="600" data-start="2800"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br/>
-          tempor incididunt ut labore et dolore magna aliqua.</div>
+        <div class="caption lfb large-title tp-resizeme slidertext3" data-x="left" data-y="400" data-speed="600" data-start="2800"> Love what you see because <br/>
+          being your best starts with great hair.</div>
         <div class="caption lfb large-title tp-resizeme slidertext4" data-x="left" data-y="470" data-speed="600" data-start="3400"> <a href="#">Contact Us</a> </div>
       </li>
     </ul>
@@ -86,7 +86,7 @@
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nibh dolor, gravida faucibus dolor consectetur, pulvinar rhoncus risus. Fusce vel rutrum mi. Suspendisse pretium tellus eu ipsum pellentesque convallis. Ut mollis libero eu massa imperdiet faucibus vitae non diam. Sed egestas felis libero, ut suscipit nisl varius non. Proin eget suscipit nulla. Nulla facilisi. In hac habitasse platea dictumst. </p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nibh dolor, gravida faucibus dolor consectetur, pulvinar rhoncus risus. Fusce vel rutrum mi. Suspendisse pretium tellus eu ipsum pellentesque convallis. Ut mollis libero eu massa imperdiet faucibus vitae non diam. Sed egestas felis libero, ut suscipit nisl varius non. Proin eget suscipit nulla. Nulla facilisi. In hac habitasse platea dictumst. </p>
-          <div class="readmore"><a href="#">Read More</a></div>
+          <%# <div class="readmore"><a href="#">Read More</a></div> %>
         </div>
       </div>
       <div class="col-lg-6">
@@ -291,21 +291,21 @@
 <!-- Appointment Start --> 
 
 <!-- Blog Start -->
-<div class="blog-wrap">
+<%# <div class="blog-wrap">
   <div class="container">
     <div class="title title_center">
       <h1>Our Blog</h1>
     </div>
     <div class="row">
       <div class="col-lg-6">
-        <div class="blogImg"><img alt="" src="<%= asset_path("blog01.png") %>"></div>
+        <div class="blogImg"><img alt="" src="asset_path("blog01.png")"></div>
         <div class="blog_sec">
           <h3><a href="blog_details.html">Praesent consequat justo ut sollicitudin molestie.</a></h3>
           <div class="blog_date">May 05, 2020</div>
         </div>
       </div>
       <div class="col-lg-6">
-        <div class="blogImg"><img alt="" src="<%= asset_path("blog02.png") %>"></div>
+        <div class="blogImg"><img alt="" src="asset_path("blog02.png")"></div>
         <div class="blog_sec">
           <h3><a href="blog_details.html">Praesent consequat justo ut sollicitudin molestie.</a></h3>
           <div class="blog_date">May 05, 2020</div>
@@ -313,11 +313,11 @@
       </div>
     </div>
   </div>
-</div>
+</div> %>
 <!-- Blog Start --> 
 
 <!-- Testimonials Start -->
-<div class="testimonials-wrap">
+<%# <div class="testimonials-wrap">
   <div class="container">
     <div class="title">
       <p>Testimoinials</p>
@@ -328,7 +328,7 @@
         <div class="testimonials_sec">
           <div class="quote_icon"><i class="fas fa-quote-left"></i></div>
           <div class="client_box">
-            <div class="clientImg"><img alt="" src="<%= asset_path("client1.jpg") %>"></div>
+            <div class="clientImg"><img alt="" src="asset_path("client1.jpg")"></div>
             <h3>Wanda Bates</h3>
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, urna eu scelerisque maximus, urna nibh semper lectus, ut interdum nunc ligula et magna. In ac mauris vehicula, vulputate sem at, placerat nisl. Etiam laoreet erat magna, at hendrerit lorem vulputate non. Nam facilisis congue convallis.</p>
@@ -338,7 +338,7 @@
         <div class="testimonials_sec">
           <div class="quote_icon"><i class="fas fa-quote-left"></i></div>
           <div class="client_box">
-            <div class="clientImg"><img alt="" src="<%= asset_path("client2.jpg") %>"></div>
+            <div class="clientImg"><img alt="" src="asset_path("client2.jpg")"></div>
             <h3>Wanda Bates</h3>
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, urna eu scelerisque maximus, urna nibh semper lectus, ut interdum nunc ligula et magna. In ac mauris vehicula, vulputate sem at, placerat nisl. Etiam laoreet erat magna, at hendrerit lorem vulputate non. Nam facilisis congue convallis.</p>
@@ -348,7 +348,7 @@
         <div class="testimonials_sec">
           <div class="quote_icon"><i class="fas fa-quote-left"></i></div>
           <div class="client_box">
-            <div class="clientImg"><img alt="" src="<%= asset_path("client1.jpg") %>"></div>
+            <div class="clientImg"><img alt="" src="asset_path("client1.jpg")"></div>
             <h3>Wanda Bates</h3>
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, urna eu scelerisque maximus, urna nibh semper lectus, ut interdum nunc ligula et magna. In ac mauris vehicula, vulputate sem at, placerat nisl. Etiam laoreet erat magna, at hendrerit lorem vulputate non. Nam facilisis congue convallis.</p>
@@ -358,7 +358,7 @@
         <div class="testimonials_sec">
           <div class="quote_icon"><i class="fas fa-quote-left"></i></div>
           <div class="client_box">
-            <div class="clientImg"><img alt="" src="<%= asset_path("client2.jpg") %>"></div>
+            <div class="clientImg"><img alt="" src="asset_path("client2.jpg")"></div>
             <h3>Wanda Bates</h3>
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, urna eu scelerisque maximus, urna nibh semper lectus, ut interdum nunc ligula et magna. In ac mauris vehicula, vulputate sem at, placerat nisl. Etiam laoreet erat magna, at hendrerit lorem vulputate non. Nam facilisis congue convallis.</p>
@@ -366,7 +366,7 @@
       </li>
     </ul>
   </div>
-</div>
+</div> %>
 <!-- Testimonials End --> 
 
 <!-- Contact Start -->
