@@ -60,14 +60,14 @@
         <div class="caption lft large-title tp-resizeme slidertext2" data-x="left" data-y="270" data-speed="600" data-start="2200"><span> RossiStyles </span></div>
         <div class="caption lfb large-title tp-resizeme slidertext3" data-x="left" data-y="400" data-speed="600" data-start="2800"> Love what you see because <br/>
           being your best starts with great hair.</div>
-        <div class="caption lfb large-title tp-resizeme slidertext4" data-x="left" data-y="470" data-speed="600" data-start="3400"> <a href="#">Contact Us</a> </div>
+        <div class="caption lfb large-title tp-resizeme slidertext4" data-x="left" data-y="470" data-speed="600" data-start="3400"> <a href="#contact">Join Us</a> </div>
       </li>
       <li data-slotamount="7" data-transition="slotzoom-horizontal" data-masterspeed="1000" data-saveperformance="on"> <img alt="" src="<%= asset_path("dummy.png") %>" data-lazyload="<%= asset_path("slider2.jpg") %>">
         <div class="caption lfb large-title tp-resizeme slidertext1" data-x="left" data-y="240" data-speed="600" data-start="1600"> Welcome To </div>
         <div class="caption lft large-title tp-resizeme slidertext2" data-x="left" data-y="270" data-speed="600" data-start="2200"><span> Rossi Styles </span></div>
         <div class="caption lfb large-title tp-resizeme slidertext3" data-x="left" data-y="400" data-speed="600" data-start="2800"> Love what you see because <br/>
           being your best starts with great hair.</div>
-        <div class="caption lfb large-title tp-resizeme slidertext4" data-x="left" data-y="470" data-speed="600" data-start="3400"> <a href="#">Contact Us</a> </div>
+        <div class="caption lfb large-title tp-resizeme slidertext4" data-x="left" data-y="470" data-speed="600" data-start="3400"> <a href="#contact">Join Us</a> </div>
       </li>
     </ul>
   </div>
@@ -192,7 +192,7 @@
 <!-- Gallery End --> 
 
 <!-- Expert Start -->
-<div class="expert-wrap">
+<%# <div class="expert-wrap">
   <div class="container">
     <div class="title title_center">
       <h1>Our Experts</h1>
@@ -200,7 +200,7 @@
     <div class="row">
       <div class="col-lg-3 col-md-6">
         <div class="experts">
-          <div class="teamImg"><img src="<%= asset_path("team01.jpg") %>" alt="">
+          <div class="teamImg"><img src="<asset_path("team01.jpg")" alt="">
             <ul class="social-icons list-inline">
               <!-- social-icons -->
               <li class="social-facebook"> <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a> </li>
@@ -218,7 +218,7 @@
       </div>
       <div class="col-lg-3 col-md-6">
         <div class="experts">
-          <div class="teamImg"><img src="<%= asset_path("team02.jpg") %>" alt="">
+          <div class="teamImg"><img src="<asset_path("team02.jpg")" alt="">
             <ul class="social-icons list-inline">
               <!-- social-icons -->
               <li class="social-facebook"> <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a> </li>
@@ -236,7 +236,7 @@
       </div>
       <div class="col-lg-3 col-md-6">
         <div class="experts">
-          <div class="teamImg"><img src="<%= asset_path("team03.jpg") %>" alt="">
+          <div class="teamImg"><img src="<asset_path("team03.jpg")" alt="">
             <ul class="social-icons list-inline">
               <!-- social-icons -->
               <li class="social-facebook"> <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a> </li>
@@ -254,7 +254,7 @@
       </div>
       <div class="col-lg-3 col-md-6">
         <div class="experts">
-          <div class="teamImg"><img src="<%= asset_path("team04.jpg") %>" alt="">
+          <div class="teamImg"><img src=" asset_path("team04.jpg")" alt="">
             <ul class="social-icons list-inline">
               <!-- social-icons -->
               <li class="social-facebook"> <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a> </li>
@@ -272,7 +272,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> %>
 <!-- Expert End --> 
 
 <!-- Appointment Start -->
@@ -283,7 +283,7 @@
         <h3>Donec egestas auctor arcu tincidunt.</h3>
       </div>
       <div class="col-lg-4">
-        <div class="readmore"><a href="contact.html">Book An Appointment</a></div>
+        <%# <div class="readmore"><a href="contact.html">Book An Appointment</a></div> %>
       </div>
     </div>
   </div>
@@ -376,9 +376,9 @@
       <div class="col-lg-7">
         <div class="contact_form">
           <div class="title">
-            <h1>Make an Appointment</h1>
+            <h1>Join our Newsletter</h1>
           </div>
-          <p>Donec scelerisque libero eget mauris fermentum, vitae maximus mauris egestas. Sed eleifend placerat nulla vehicula odio in rhoncus.</p>
+          <p>Sign up now to receive email updates on new product announcements, speacial promotions, sales and more!!.</p>
           <form class="form" action="mail/mail.php">
             <div class="row">
               <div class="col-lg-6">
