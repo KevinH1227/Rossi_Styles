@@ -685,7 +685,7 @@ button:focus{outline: none;}
 /*********************************************
         Footer css
 *********************************************/
-.footer-wrap{background: url(footer-bg.jpg) no-repeat top; background-size: cover; padding: 50px 0 20px 0;}
+.footer-wrap{background: url(service-bg.jpg) no-repeat top; background-size: cover; padding: 50px 0 20px 0;}
 .footer-wrap p{font-size: 14px; color:#bcc5d0; margin-top: 15px;}
 
 .footer-wrap h3{font-size: 18px; margin-bottom: 20px; display: inline-block; font-weight: bold; font-family: 'Open Sans', sans-serif; color: #fff; margin-bottom: 25px;}
