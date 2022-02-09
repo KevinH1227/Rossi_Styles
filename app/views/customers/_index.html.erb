@@ -1,0 +1,22 @@
+<div class="contact-wrap" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="contact_form">
+          <div class="title">
+            <h1>Join our Newsletter</h1>
+          </div>
+            <p>Sign up now to receive email updates on new product announcements, speacial promotions, sales and more!!</p>
+              <%= form_for (@customer), :html => { :class =>'sign-up-form' } do |f| %>
+                <%= f.text_field :first_name, :required => true, placeholder: "First Name", class: 'label' %>
+                <%= f.text_field :last_name, placeholder: "Last Name", class: 'label' %>
+                <%= f.email_field :email, :required => true, placeholder: "Email", class: 'label' %>
+                <%= f.text_area :your_business, :required => true, placeholder: "Tell us about your business", class: 'label large-box' %>
+                <%= f.text_area :looking_for, :required => true, placeholder: "What services are you looking for?", class: 'label large-box' %>
+                <%= f.submit "Submit", data: { confirm: "Submitting..." },class: "simple", id: "simple" %>
+            <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
