@@ -373,7 +373,9 @@
 <!-- Testimonials End --> 
 
 <!-- Contact Start -->
-<div class="contact-wrap" id="contact">
+
+<%= render "customers/index" %>
+<%# <div class="contact-wrap" id="contact">
   <div class="container">
     <div class="row">
       <div class="col-lg-7">
@@ -428,19 +430,19 @@
           <ul class="contact-list unorderList">
             <li>
               <div class="contact_box">
-                <div class="icon"> <img alt="" src="<%= asset_path("adress.png") %>"> </div>
+                <div class="icon"> <img alt="" src="<%= asset_path("adress.png") "> </div>
                 <p>Fery Beauté Spa <span>7600 Boulevard Viau Suite 356 <br>Montreal, QC H1S 2P3</span></p>
               </div>
             </li>
             <li>
               <div class="contact_box">
-                <div class="icon"> <img alt="" src="<%= asset_path("email.png") %>"> </div>
+                <div class="icon"> <img alt="" src="<%= asset_path("email.png") "> </div>
                 <p>E-mail<span> <a href="mailto:info@example.com">info.rossistyles@gmail.com</a></span></p>
               </div>
             </li>
             <li>
               <div class="contact_box">
-                <div class="icon"> <img alt="" src="<%= asset_path("phone.png") %>"> </div>
+                <div class="icon"> <img alt="" src="<%= asset_path("phone.png") "> </div>
                 <p>Phone<span> <a href="tel:7701234567">514.947.4393</a></span></p>
               </div>
             </li>
@@ -449,7 +451,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> %>
 
 <!-- Contact End --> 
 
