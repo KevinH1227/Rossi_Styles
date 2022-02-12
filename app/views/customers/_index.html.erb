@@ -7,7 +7,7 @@
             <h1>Join our Newsletter</h1>
           </div>
           <p>Sign up now to receive email updates on new product announcements, speacial promotions, sales and more!!</p>
-          <%= form_for (Customer.new), :html => { :class =>"form" } do |f| %>
+          <%= form_for (@customer), :html => { :class =>"form" } do |f| %>
             <div class="row">
               <div class="col-lg-6">
                 <div class="form-group">
