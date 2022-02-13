@@ -7,9 +7,9 @@ class CustomersController < ApplicationController
     @customer = Customer.new(customer_params)
       if @customer.save
         cookies[:saved_lead] = true
-        redirect_to customers_path, notice: "Saved Successfully!"
+        redirect_to root_path, notice: "Saved Successfully!"
       else
-        redirect_to customers_path, notice: "Failed to save!"
+        redirect_to root_path, notice: "Failed to save!"
       end
   end
 
