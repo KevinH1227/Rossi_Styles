@@ -1,2 +1,5 @@
 en:
-  hello: "Hello world"
+  about: "ABOUT"
+  services: "SERVICES"
+  gallery: "GALLERY"
+  contact: "CONTACT"
