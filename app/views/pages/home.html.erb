@@ -40,6 +40,9 @@
                   </li>
                   <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li> %>
                   <li class="nav-item"><a class="nav-link" href="#contact"><%= t 'contact' %></a></li>
+                  <li class="nav-item"><a class="nav-link"><%= link_to 'English', root_path(locale: :en) %></a></li>
+                  <li class="nav-item"><a class="nav-link"><%= link_to 'French', root_path(locale: :fr) %></a></li>
+                  <li class="nav-item"><a class="nav-link"><%= link_to 'Italian', root_path(locale: :it) %></a></li>
                 </ul>
               </div>
               
@@ -60,14 +63,13 @@
         <div class="caption lfb large-title tp-resizeme slidertext1" data-x="left" data-y="240" data-speed="600" data-start="1600"><%= t 'welcome' %></div>
         <div class="caption lft large-title tp-resizeme slidertext2" data-x="left" data-y="270" data-speed="600" data-start="2200"><span> RossiStyles </span></div>
         <div class="caption lfb large-title tp-resizeme slidertext3" data-x="left" data-y="400" data-speed="600" data-start="2800"><%= t 'welcome_html' %></div>
-        <div class="caption lfb large-title tp-resizeme slidertext4" data-x="left" data-y="470" data-speed="600" data-start="3400"> <a href="#contact">Join Us</a> </div>
+        <div class="caption lfb large-title tp-resizeme slidertext4" data-x="left" data-y="470" data-speed="600" data-start="3400"> <a href="#contact"><%= t 'join' %></a></div>
       </li>
       <li data-slotamount="7" data-transition="slotzoom-horizontal" data-masterspeed="1000" data-saveperformance="on"> <img alt="" src="<%= asset_path("dummy.png") %>" data-lazyload="<%= asset_path("slider2.jpg") %>">
-        <div class="caption lfb large-title tp-resizeme slidertext1" data-x="left" data-y="240" data-speed="600" data-start="1600"> Welcome To </div>
+        <div class="caption lfb large-title tp-resizeme slidertext1" data-x="left" data-y="240" data-speed="600" data-start="1600"><%= t 'welcome' %></div>
         <div class="caption lft large-title tp-resizeme slidertext2" data-x="left" data-y="270" data-speed="600" data-start="2200"><span> Rossi Styles </span></div>
-        <div class="caption lfb large-title tp-resizeme slidertext3" data-x="left" data-y="400" data-speed="600" data-start="2800"> Love what you see because <br/>
-          being your best starts with great hair.</div>
-        <div class="caption lfb large-title tp-resizeme slidertext4" data-x="left" data-y="470" data-speed="600" data-start="3400"> <a href="#contact">Join Us</a> </div>
+        <div class="caption lfb large-title tp-resizeme slidertext3" data-x="left" data-y="400" data-speed="600" data-start="2800"><%= t 'welcome_html' %></div>
+        <div class="caption lfb large-title tp-resizeme slidertext4" data-x="left" data-y="470" data-speed="600" data-start="3400"> <a href="#contact"><%= t 'join' %></a></div>
       </li>
     </ul>
   </div>
@@ -81,11 +83,11 @@
       <div class="col-lg-6">
         <div class="about_box">
           <div class="title">
-            <p>About Me</p>
-            <h1>Excellent hairstyling  <span>extends beyond making</span> clients look good – they have to feel good as well.</h1>  
+            <p><%= t 'about_me' %></p>
+            <h1><%= t 'about_html' %></h1>  
           </div>
-          <p>Hi, I’m Anna! I’ve been a stylist and colorist for the past 13 years and I’m so happy that my passion became a living and my way of making people look and feel the best they can. I attend numerous continuing-ed classes each year so as to always be knowledgeable of the best practices and healthiest techniques to use.</p>
-          <p>I specialize in balayage but also love doing blonds, browns, redheads or rainbow colors. I love doing event hairstyles and creative haircuts - helping my clients express themselves through hair. So what are you waiting for? Let’s find your perfect style (if you promise no more box dye!).</p>
+          <p><%= t 'about_description1' %></p>
+          <p><%= t 'about_description2' %></p>
           <%# <div class="readmore"><a href="#">Read More</a></div> %>
         </div>
       </div>
@@ -101,21 +103,21 @@
 <div class="service-wrap" id="services">
   <div class="container">
     <div class="title title_center">
-      <h1>Our Services</h1>
+      <h1><%= t 'my_services' %></h1>
     </div>
     <div class="service_box">
       <div class="row">
         <div class="col-lg-4 col-md-4">
           <div class="serviceImg"><img alt="" src="<%= asset_path("serviceimg01.jpg") %>"></div>
-          <h3><a>HairCuts</a></h3>
+          <h3><a><%= t 'service_type1' %></a></h3>
         </div>
         <div class="col-lg-4 col-md-4">
           <div class="serviceImg"><img alt="" src="<%= asset_path("serviceimg02.png") %>"></div>
-          <h3><a>HairStyles</a></h3>
+          <h3><a><%= t 'service_type2' %></a></h3>
         </div>
         <div class="col-lg-4 col-md-4">
           <div class="serviceImg"><img alt="" src="<%= asset_path("serviceimg03.jpg") %>"></div>
-          <h3><a>Colors</a></h3>
+          <h3><a><%= t 'service_type3' %></a></h3>
         </div>
 
         
@@ -129,7 +131,7 @@
 <div class="gallery-wrap" id="gallery">
   <div class="container-fluid">
     <div class="title title_center">
-      <h1>Our Gallery</h1>
+      <h1><%= t 'my_gallery' %></h1>
     </div>
     <div class="row">
       <div class="col-lg-3 col-md-6">
@@ -383,37 +385,37 @@
     <div class="row">
       <div class="col-lg-3">
         <div class="footer_logo"><img alt="" class="footer-default" src="<%= asset_path("salon_logo.png") %>"></div>
-        <p>Like what you see? Contact me to start your journey to take control of your hair game now!</p>
+        <p><%= t 'footer_description' %></p>
       </div>
       <div class="col-lg-2 col-md-3">
-        <h3>Quick links</h3>
+        <h3><%= t 'quick_links' %></h3>
         <ul class="footer-links">
           <%# <li> <a href="#home">Home</a></li> %>
-          <li> <a href="#about">About</a></li>
-          <li> <a href="#services">Services</a></li>
-          <li> <a href="#gallery">Gallery</a></li>
+          <li> <a href="#about"><%= t 'about_footer' %></a></li>
+          <li> <a href="#services"><%= t 'services_footer' %></a></li>
+          <li> <a href="#gallery"><%= t 'gallery_footer' %></a></li>
           <%# <li> <a href="testimonials.html">Testimonials</a></li>
           <li> <a href="blog.html">Blog</a></li> %>
-          <li> <a href="#contact">Contact Us</a></li>
+          <li> <a href="#contact"><%= t 'contact_footer' %></a></li>
         </ul>
       </div>
       <div class="col-lg-3 col-md-4">
-        <h3>My Schedule</h3>
+        <h3><%= t 'my_schedule' %></h3>
         <ul class="unorderList hourswrp">
-          <li>Monday <span>Closed</span></li>
-          <li>Tuesday <span>09:30 - 16:00</span></li>
-          <li>Wednesday <span>09:30 - 16:00</span></li>
-          <li>Thursday <span>Closed</span></li>
-          <li>Friday <span>09:30 - 16:00</span></li>
-          <li>Saturday <span>08:00 - 17:00</span></li>
-          <li>Sunday <span>Closed</span></li>
+          <li><%= t 'monday' %> <span><%= t 'closed' %></span></li>
+          <li><%= t 'tuesday' %> <span>09:30 - 16:00</span></li>
+          <li><%= t 'wednesday' %> <span>09:30 - 16:00</span></li>
+          <li><%= t 'thursday' %> <span><%= t 'closed' %></span></li>
+          <li><%= t 'friday' %> <span>09:30 - 16:00</span></li>
+          <li><%= t 'saturday' %> <span>08:00 - 17:00</span></li>
+          <li><%= t 'sunday' %> <span><%= t 'closed' %></span></li>
         </ul>
       </div>
       <div class="col-lg-3 col-md-4 offset-1">
         <div class="footer_info">
-          <h3>Get in Touch</h3>
+          <h3><%= t 'get_in_touch' %></h3>
           <ul class="footer-adress">
-            <li class="footer_address"> <i class="fas fa-map-signs"></i> <span>Fery Beauté Spa<br> 7600 Boulevard Viau<br> Suite 356<br>Montreal, QC<br> H1S 2P3</span></li>
+            <li class="footer_address"> <i class="fas fa-map-signs"></i> <span>Fery Beauté Spa<br> <%= t 'address' %><br> #356<br>Montreal, QC<br> H1S 2P3</span></li>
             <li class="footer_email"> <i class="fas fa-envelope" aria-hidden="true"></i> <span><a href="mailto:info@example.com">info.rossistyles@gmail.com</a></span> </li>
             <li class="footer_phone"> <i class="fas fa-phone-alt"></i> <span><a href="tel:7704282433">514.947.4393</a></span> </li>
           </ul>
@@ -436,10 +438,10 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-        <div class="copyright">Copyright  © 2022 RossiStyles. All Rights Reserved.</div>
+        <div class="copyright"><%= t 'copyright' %></div>
       </div>
       <div class="col-lg-6">
-        <div class="credits">Powered by <a href="http://www.margevity.com/" target="_blank" rel="nofollow">Margevity</a></div>
+        <div class="credits"><%= t 'powered_by' %> <a href="http://www.margevity.com/" target="_blank" rel="nofollow">Margevity</a></div>
       </div>
     </div>
   </div>
