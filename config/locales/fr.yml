@@ -6,7 +6,6 @@ fr:
   welcome: "Bienvenue à"
   welcome_html: "Aimez ce que vous voyez <br/> car être à votre meilleur commence par de beaux cheveux"
   join: "Rejoignez-Nous"
-
   about_me: "À Propos de Moi"
   about_html: "Une excellente coiffure  <span>va au-delà de la beauté des clients,</span> ils doivent aussi se sentir bien."
   about_description1: "Salut, je suis Anna ! Je suis une styliste et coloriste depuis 13 ans et je suis tellement heureuse que ma passion soit devenue une vie et ma façon de faire en sorte que les gens se sentent et se sentent le mieux possible. J'assiste à de nombreux cours de formation continue chaque année afin de toujours être au courant des meilleures pratiques et des techniques les plus saines à utiliser."
@@ -35,3 +34,17 @@ fr:
   address: "7600 Boulevard Viau"
   copyright: "Droits d'auteur  © 2022 RossiStyles. Tous les droits sont réservés."
   powered_by: "Alimenté par"
+
+  newsletter: "Rejoignez notre bulletin"
+  sign-up: "Inscrivez-vous maintenant pour recevoir des mises à jour par courriel sur les annonces de nouveaux produits, les promotions spéciales, les ventes et plus!!"
+  
+  first_name: "Prenom"
+  last_name: "Nom de famille"
+  email: "Courriel"
+  phone: "Téléphone"
+  message: "Écrivez un message"
+  welcome_message: "Bienvenue à la famille!"
+  contact1: "Informations de"
+  information: "Contact"
+  email1: "Courriel"
+  phone: "Téléphone"

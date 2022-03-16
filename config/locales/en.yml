@@ -34,3 +34,19 @@ en:
   address: "7600 Boulevard Viau"
   copyright: "Copyright  © 2022 RossiStyles. All Rights Reserved."
   powered_by: "Powered by"
+
+  newsletter: "Join our Newsletter"
+  sign-up: "Sign up now to receive email updates on new product announcements, speacial promotions, sales and more!!"
+  
+  first_name: "First name"
+  last_name: "Last name"
+  email: "Email"
+  phone: "Phone"
+  message: "Message"
+  welcome_message: "Welcome to the family!"
+  contact1: "Contact"
+  information: "Information"
+  email1: "E-mail"
+  phone: "Phone"
+
+
