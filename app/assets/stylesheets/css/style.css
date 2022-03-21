@@ -161,6 +161,10 @@ ul.tick li{margin-bottom:10px;}
     visibility: visible;
 }
 
+.submenu {
+    list-style-type: none;
+}
+
 .navbar-nav > li > ul > li {
     position: relative;
     float: none;
@@ -169,10 +173,10 @@ ul.tick li{margin-bottom:10px;}
     padding: 0;
 }
 
-.submenu>li:hover>a {
+/* .submenu>li:hover>a {
     background: #e784a2;
     color: #fff !important; 
-}
+} */
 
 .navbar-nav > li > ul > li > a {text-decoration:none;
     position: relative;
